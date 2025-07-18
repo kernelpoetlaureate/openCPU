@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run Verilog Simulation",
+			"command": "iverilog -o cpu_test mini_cpu.v mini_cpu_tb.v && vvp cpu_test",
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}
